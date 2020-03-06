@@ -2,7 +2,7 @@ ARG BASE_IMAGE=nvcr.io/nvidia/tensorrt:20.02-py3
 FROM ${BASE_IMAGE}
 
 
-RUN pip install torch torchvision termcolor \
+RUN pip3 install torch torchvision termcolor \
     && rm -rf ~/.cache/pip
 
 WORKDIR /workspace
